@@ -1,0 +1,8 @@
+[build]
+command = "pip install -r requirements.txt"
+
+[deploy]
+command = "streamlit run app.py --server.port $PORT --server.address 0.0.0.0"
+
+[env]
+GOOGLE_API_KEY = "AIzaSyCJ1chuckOp0si1XcAA7t_XSyyzjhaNX_Q"
