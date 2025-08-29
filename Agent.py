@@ -108,6 +108,8 @@ llm = GoogleGenerativeAI( model="gemini-1.5-flash", temperature=0.6)
 custom_data = {
     "Deepak": "Deepak आप अब्दुल्ला के दोस्त हैं i am right",
     "Munna": "अख्तर रज़ा आप अब्दुल्ला के दोस्त हैं",
+      "Alam": " Khurshid Alam आप अब्दुल्ला के दोस्त हैं",
+    "Tashab": "Mohammad Tashab आप अब्दुल्ला के दोस्त हैं",
     "abdullah": "Abdullah is an AI Engineer, YouTuber, Laravel Backend Developer, a future Robot Engineer, and the founder of WeMe.ai.",
     "tahir": "Tahir is Abdullah's brother who supports him in his journey.",
     "habib": "Habib is Abdullah's brother and a Civil Engineer, known for his kind nature and wisdom. He has always supported Abdullah in every step of life, especially during his childhood studies, guiding and motivating him to learn and grow. His encouragement has been a big reason behind Abdullah’s confidence and success.",
@@ -188,5 +190,6 @@ if st.button('Get Info'):
             st.success(f"Famous Foods: {response['food']}")
         except Exception as e:
             st.error(f"Error: {str(e)}")
+
 
 
